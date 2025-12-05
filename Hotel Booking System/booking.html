@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Room - Luxury Stay</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1 class="logo">Luxury Stay</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="room.html">Rooms</a>
+    <a href="booking.html" class="active">Book Now</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="booking-section">
+  <h2>Book Your Stay</h2>
+  <form id="bookingForm">
+    <label>Selected Room:</label>
+    <input type="text" id="roomName" readonly>
+
+    <label>Price per night (₹):</label>
+    <input type="text" id="roomPrice" readonly>
+
+    <label>Your Name:</label>
+    <input type="text" id="guestName" required>
+
+    <label>Check-in Date:</label>
+    <input type="date" id="checkin" required>
+
+    <label>Check-out Date:</label>
+    <input type="date" id="checkout" required>
+
+    <label>Total Price (₹):</label>
+    <input type="text" id="totalPrice" readonly>
+
+    <button type="submit" class="btn">Confirm Booking</button>
+  </form>
+
+  <div id="bookingResult"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
